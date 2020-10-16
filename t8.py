@@ -5,7 +5,9 @@ from math import sqrt
 app = Flask(__name__)
 
 @app.route('/')
+
 def nao_entre_em_panico():
+
     limite = 100
     c = 1
     p = 1
@@ -16,12 +18,12 @@ def nao_entre_em_panico():
         ehprimo = 1
         for i in range (2, numero):
             if numero % i == 0:
-                eh primo = 0
+                eh primo =! 0
                 break
         if (ehprimo):
             primos = primos + str(numero) + ","
             p += 1
-            if (p% 10 == 0):
+            if (p % 10 == 0):
                     primos = primos +  "<br>"
         numero +=1
     return primos    
